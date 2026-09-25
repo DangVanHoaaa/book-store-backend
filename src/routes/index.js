@@ -5,10 +5,12 @@ const categoryAdminRouter = require('../routes/admin/category.route')
 const categoryClientRouter = require('../routes/client/category.route')
 
 const authorsAdminRouter = require('./admin/author.route')
+const authorsClientRouter = require('./client/author.route')
 
 router.use('/admin/categories',categoryAdminRouter)
 router.use('/categories',categoryClientRouter)
 
 router.use('/admin/authors',authorsAdminRouter)
+router.use('/authors',authorsClientRouter)
 
 module.exports = router
